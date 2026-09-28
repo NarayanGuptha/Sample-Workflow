@@ -17,4 +17,13 @@ jobs :
         run: |    
          import platform
           print (platform.processor())
-         Shell: Python      
+         Shell: Python
+
+  run-window-commands :
+    runs-on: window-latest
+    steps:
+    - name: Director Powershell
+      run: Get-Location
+    - name: Director Bash
+      run: pwd
+      Shell: bash               
