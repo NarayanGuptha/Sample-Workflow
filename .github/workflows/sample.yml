@@ -4,7 +4,7 @@ on : [push]
 
 jobs :
   run-shell-commands : 
-    runs on : ubuntu-latest, windows
+    runs on : ubuntu-latest
     steps:
       - name: string
         run: echo " Welcome to Devops hints "
