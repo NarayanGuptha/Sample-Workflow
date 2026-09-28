@@ -26,4 +26,4 @@ jobs :
       run: Get-Location
     - name: Director Bash
       run: pwd
-      Shell: bash               
+      shell: bash
