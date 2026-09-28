@@ -4,7 +4,8 @@ on : [push]
 
 jobs :
   run-shell-commands : 
-    runs on : ubuntu-latest, windows
+    runs-on : ubuntu-latest
+    
     steps:
       - name: string
         run: echo " Welcome to Devops hints "
@@ -12,4 +13,8 @@ jobs :
         run: |
           node -v
           npm -v
-          
+      - name : python command
+         run: | 
+          import platform
+          print (platform.processor())
+         Shell: Python     
